@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp.example.admin.duan2_timphongtrodanang.activity.ChiTietPhongActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@drawable/backgroud"
+        app:titleTextColor="#f9f6f6"
+        app:title="Chi tiết phòng"
+        android:id="@+id/toolbarChitiet"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/imgViewChiTietPhong"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giá phòng:"
+                        android:textSize="25sp"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvGiaphongChiTiet"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="600000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Địa chỉ:"
+                        android:textSize="25sp"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvDiaChiphongChiTiet"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="165 Nguyễn văn Cừ, Đà Nẵng"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả:"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/tvMotaChitiet"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold"
+                    android:text="Thông tin liên hệ"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên chủ phòng:"
+                        android:textSize="20sp"
+                        android:textColor="#00ff62"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvTenphongChiTiet"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dì HAI"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số điện thoại:"
+                        android:textSize="20sp"
+                        android:textColor="#00ff62"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvSdtphongChiTiet"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0778838005"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Lưu phòng"
+                android:background="#0a01ff"
+                android:id="@+id/btnLuu"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
